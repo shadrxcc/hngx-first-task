@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage One Task</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>SK.</header>
+    <div class="container">
+      <div>
+        <img
+          id="userpfp"
+          src="/src/assets/profilepicture.svg"
+          alt="sheddysk"
+          data-testid="slackDisplayImage"
+          loading="lazy"
+        />
+      </div>
+      <div class="details">
+        <p id="username" data-testid="slackUserName">sheddysk</p>
+        <p>
+          <span id="day" data-testid="currentDayOfTheWeek"></span>,
+          <span id="currentUTCTime" data-testid="currentUTCTime"></span>
+        </p>
+        <p id="track" data-testid="myTrack">Frontend Track</p>
+      </div>
+
+      <a
+        data-testid="githubURL"
+        target="_blank"
+        href="https://github.com/shadrxcc/hngx-first-task"
+        id="card"
+      >
+        <p>Github Repo</p>
+        <img src="/src/assets/arrow.svg" alt="" srcset="" />
+      </a>
+
+      <a
+        target="_blank"
+        data-testid="portfolioURL"
+        href="https://github.com/shadrxcc/hngx-first-task"
+        id="card"
+      >
+        <p>Portfolio</p>
+        <img src="/src/assets/arrow.svg" alt="" srcset="" />
+      </a>
+    </div>
+    <script src="/src/index.js" type="module"></script>
+  </body>
+</html>

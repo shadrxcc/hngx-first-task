@@ -9,9 +9,9 @@
 }
 
 @font-face {
-    font-family: stix;
-    src: url(./assets/STIXTwoText-VariableFont_wght.ttf);
-  }
+  font-family: stix;
+  src: url(./assets/STIXTwoText-VariableFont_wght.ttf);
+}
 
 html body {
   margin: 0 auto;
@@ -23,11 +23,11 @@ html body {
 }
 
 header {
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 15px;
-    font-family: stix;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: stix;
 }
 
 #userpfp {
@@ -73,4 +73,10 @@ a:link {
   align-items: center;
   padding: 22px 16px;
   width: 80%;
+}
+
+#card:hover {
+  transform: scale(1.05);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
 }

@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const formattime = currentUTCTime.split(" ");
 
-  const utctime = formattime[4].split(":").slice(0, 2).join(":");
-  // console.log(utctime);
+  const utctime = formattime[4];
 
   const gmt = formattime[5];
 

@@ -22,11 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
   //  console.log(currentUTCTime)
 
   const formattime = currentUTCTime.split(" ");
-  // console.log(formattime)
 
-  const utctime = formattime[4];
+  const utctime = formattime[4].split(":").slice(0, 2).join(":");
+  // console.log(utctime);
+
   const gmt = formattime[5];
 
-  const formattedtime = `${utctime}, ${gmt}`;
+  const formattedtime = `${utctime} ${gmt}`;
   currentTime.textContent = formattedtime;
 });

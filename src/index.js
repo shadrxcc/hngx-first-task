@@ -15,13 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
   const currentDate = new Date();
 
-  const currentUTCTime = currentDate.toLocaleTimeString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-  currentTime.textContent = currentUTCTime;
-
-  const currentUTCDay = daysOfWeek[currentDate.getDay()];
-
+  const currentUTCDay = daysOfWeek[currentDate.getUTCDay()];
   currentDay.textContent = currentUTCDay;
+
+  const currentUTCTime = currentDate.toUTCString();
+  //  console.log(currentUTCTime)
+
+  const formattime = currentUTCTime.split(" ");
+  // console.log(formattime)
+
+  const utctime = formattime[4];
+  const gmt = formattime[5];
+
+  const formattedtime = `${utctime}, ${gmt}`;
+  currentTime.textContent = formattedtime;
 });

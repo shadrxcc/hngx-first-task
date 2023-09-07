@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: satoshi;
-  src: url(/src/assets/Satoshi-Variable.ttf);
+  src: url(./assets/Satoshi-Variable.ttf);
 }
 
 @font-face {
     font-family: stix;
-    src: url(/src/assets/STIXTwoText-VariableFont_wght.ttf);
+    src: url(./assets/STIXTwoText-VariableFont_wght.ttf);
   }
 
 html body {

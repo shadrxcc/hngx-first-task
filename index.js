@@ -18,15 +18,33 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentUTCDay = daysOfWeek[currentDate.getUTCDay()];
   currentDay.textContent = currentUTCDay;
 
-  const currentUTCTime = currentDate.toUTCString();
-  //  console.log(currentUTCTime)
-
-  const formattime = currentUTCTime.split(" ");
-
-  const utctime = formattime[4];
-
-  const gmt = formattime[5];
-
-  const formattedtime = `${utctime} ${gmt}`;
-  currentTime.textContent = formattedtime;
+  const currentUTCTimeMillis = Date.now();
+  currentTime.textContent = currentUTCTimeMillis;
 });
+
+//older function for getting time in hrs:mins:seconds
+// function updateCurrentTime() {
+//   // const currentDate = new Date();
+//   // const currentUTCTime = currentDate.getUTCDate();
+
+//   // const formattime = currentUTCTime.split(" ");
+
+//   // const date = formattime[1];
+
+//   // const year = formattime[3]
+
+//   // const month = formattime[2];
+
+//   // const utctime = formattime[4].split(":");
+//   // // console.log(utctime);
+//   // const hr = utctime[0];
+//   // const min = utctime[1];
+
+//   // const gmt = formattime[5];
+
+//   // const formattedtime = `${date} ${month} ${year} ${hr}:${min}`;
+//   // currentTime.textContent = formattedtime;
+// }
+
+// updateCurrentTime();
+// setInterval(updateCurrentTime, 1000);

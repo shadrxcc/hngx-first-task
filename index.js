@@ -18,8 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentUTCDay = daysOfWeek[currentDate.getUTCDay()];
   currentDay.textContent = currentUTCDay;
 
-  const currentUTCTimeMillis = Date.now();
-  currentTime.textContent = currentUTCTimeMillis;
+  function updateCurrentTime() {
+    const currentUTCTimeMillis = Date.now();
+    currentTime.textContent = currentUTCTimeMillis;
+  }
+
+  updateCurrentTime();
+
+  setInterval(updateCurrentTime, 1000);
 });
 
 //older function for getting time in hrs:mins:seconds
